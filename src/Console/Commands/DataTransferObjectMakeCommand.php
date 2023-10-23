@@ -20,8 +20,13 @@ final class DataTransferObjectMakeCommand extends GeneratorCommand
             haystack: PHP_VERSION,
             needles: '8.2',
         );
-        $file = $readOnly ? 'dto-82-.stub' : 'dto.stub';
+        $file = $readOnly ? 'dto-8.2-.stub' : 'dto.stub';
 
         return __DIR__ . "/../../../stubs/{$file}";
+    }
+
+    protected function getDefaultNamespace($rootNamespace): string
+    {
+        return "{$rootNamespace}\\LaravelDto";
     }
 }
