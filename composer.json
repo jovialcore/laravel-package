@@ -1,0 +1,18 @@
+{
+    "name": "jovialcore/laravel-dto",
+    "description": "A laravel data transfer package",
+    "type": "library",
+    "autoload": {
+        "psr-4": {
+            "Jovialcore\\LaravelDto\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Chidiebere Chukwudi"
+        }
+    ],
+    "require": {
+        "illuminate/support": "^10.28"
+    }
+}
