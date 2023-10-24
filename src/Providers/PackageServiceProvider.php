@@ -8,14 +8,12 @@ use Illuminate\Support\ServiceProvider;
 use Jovialcore\LaravelDto\Contracts\HydratorContract;
 use Jovialcore\LaravelDto\Hydrate;
 
-final class  PackageServiceProvider extends ServiceProvider
+final class PackageServiceProvider extends ServiceProvider
 {
-
-    public array $bindings  = [
-        HydratorContract::class => Hydrate::class
+    public array $bindings = [
+        HydratorContract::class => Hydrate::class,
     ];
 
-    
     public function boot(): void
     {
         if ($this->app->runningInConsole()) {

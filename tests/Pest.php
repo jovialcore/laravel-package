@@ -46,5 +46,4 @@ function something()
     // ..
 }
 
-
 uses(PackageTestCase::class)->in(__DIR__);

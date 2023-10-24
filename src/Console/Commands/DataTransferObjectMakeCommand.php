@@ -9,20 +9,21 @@ use Illuminate\Support\Str;
 
 final class DataTransferObjectMakeCommand extends GeneratorCommand
 {
-    protected $signature = "make:dto {name : The Dto Name }";
-    protected $description = "Generate a new Data Transfer Object scaffold ";
-    protected $type = "Data Transfer Object";
+    protected $signature = 'make:dto {name : The Dto Name }';
 
+    protected $description = 'Generate a new Data Transfer Object scaffold ';
+
+    protected $type = 'Data Transfer Object';
 
     protected function getStub(): string
     {
-        $readOnly  = Str::contains(
+        $readOnly = Str::contains(
             haystack: PHP_VERSION,
             needles: '8.2',
         );
         $file = $readOnly ? 'dto-8.2-.stub' : 'dto.stub';
 
-        return __DIR__ . "/../../../stubs/{$file}";
+        return __DIR__."/../../../stubs/{$file}";
     }
 
     protected function getDefaultNamespace($rootNamespace): string

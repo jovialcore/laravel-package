@@ -7,7 +7,6 @@ use Jovialcore\LaravelDto\Console\Commands\DataTransferObjectMakeCommand;
 
 use function PHPUnit\Framework\assertTrue;
 
-
 it('can run the command successfully', function () {
     $this
         ->artisan(DataTransferObjectMakeCommand::class, ['name' => 'Test'])

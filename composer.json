@@ -18,7 +18,9 @@
     },
     "require-dev": {
         "pestphp/pest": "^2.24",
-        "orchestra/testbench": "^8.13"
+        "orchestra/testbench": "^8.13",
+        "laravel/pint": "^1.13",
+        "phpstan/phpstan": "^1.10"
     },
     "config": {
         "allow-plugins": {
