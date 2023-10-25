@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace Jovialcore\LaravelDto;
 
 use EventSauce\ObjectHydrator\ObjectMapperUsingReflection;
+use Jovialcore\LaravelDto\Contracts\DataObjectContract;
 use Jovialcore\LaravelDto\Contracts\HydratorContract;
 
 class Hydrate implements HydratorContract
