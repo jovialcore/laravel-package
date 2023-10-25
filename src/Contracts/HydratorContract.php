@@ -7,9 +7,8 @@ namespace Jovialcore\LaravelDto\Contracts;
 interface HydratorContract
 {
     /**
-     * @param class-string<DataObjectContract> $class
+     * @param  class-string<DataObjectContract>  $class
      * @param array<string,mixed>$properties
-     * @return DataObjectContract
      */
     public function fill(string $class, array $properties): DataObjectContract;
 }

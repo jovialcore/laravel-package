@@ -2,6 +2,7 @@
     "name": "jovialcore/laravel-dto",
     "description": "A laravel data transfer package",
     "type": "library",
+    "version": "1.0.0",
     "autoload": {
         "psr-4": {
             "Jovialcore\\LaravelDto\\": "src/"

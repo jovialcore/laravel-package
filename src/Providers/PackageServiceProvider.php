@@ -11,11 +11,9 @@ use Jovialcore\LaravelDto\Hydrate;
 
 final class PackageServiceProvider extends ServiceProvider
 {
-
     /**
      * @var array<class-string,class-string>
      */
-
     public array $bindings = [
         HydratorContract::class => Hydrate::class,
     ];
@@ -26,7 +24,7 @@ final class PackageServiceProvider extends ServiceProvider
 
             $this->commands(
                 commands: [
-                    DataTransferObjectMakeCommand::class
+                    DataTransferObjectMakeCommand::class,
                 ]
             );
         }
